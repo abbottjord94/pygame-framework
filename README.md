@@ -1,5 +1,5 @@
 # pygame-framework
-  A game framework written in PyGame
+  A game framework written in Python using PyGame
 
 # Installation
   This framework only requires PyGame as a dependency. Other dependencies can be added by users if they wish.
