@@ -10,11 +10,10 @@
 ## Classes
 
 
-
-### `Game`
+## `Game`
   The main game class, found in game.py. This is where the game loop, event, and collision handling are done. This class also hold a list of GameObjects.
 
-#### Variables
+## Variables
 
 ##### `_settings(obj)`
   Stores the game settings as a JSON object.
@@ -31,7 +30,7 @@
 ##### `_threads(array)`
   A list of threads started by the program
 
-#### Methods
+## Methods
 
 ##### `loadSettings(file)`
   Loads the settings file and stores the resulting object in the _settings object.
@@ -59,10 +58,10 @@
   
   
 
-### `GameObject`
+## `GameObject`
   The base class for all objects in the Game.
 
-#### Variables
+## Variables
 
 ##### `_x(Number)`
   The X coordinate of the object
@@ -79,7 +78,7 @@ The name of the object
 ##### `_image(pygame.Surface)`
   The GameObject's image. The default is an unknown.png that consists of only a single transparent pixel.
 
-#### Methods
+## Methods
 
 ##### `getName()`
   Returns the name of the object as a string.
@@ -98,12 +97,13 @@ The name of the object
   
   
 
-### `GameManager` (inherits from GameObject)
+## `GameManager` (inherits from GameObject)
   The Game Manager class. This is a gateway for the user to define their own game events, and instantiates the initial objects. Ideally, the user only makes changes to GameManager.py and leaves game.py alone (though the user is free to do what they wish, of course)
 
-#### Variables
+## Variables
   None, all are defined by the user or are inherited from GameObject
-#### Methods
+  
+## Methods
 
 ##### `start()`
   This function is called once upon the object's initialization. This is where the user might want to instantiate the initial GameObjects.
