@@ -1,0 +1,9 @@
+
+{
+	"game":{
+		"title":"test title!",
+		"window_x":640,
+		"window_y":480,
+		"max_framerate":60
+		}
+}

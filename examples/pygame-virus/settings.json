@@ -1,0 +1,9 @@
+
+{
+	"game":{
+		"title":"Corona Panic!",
+		"window_x":800,
+		"window_y":600,
+		"max_framerate":60
+		}
+}
