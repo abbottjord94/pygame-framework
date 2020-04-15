@@ -98,7 +98,7 @@ The name of the object
   
 
 ## `GameManager` (inherits from GameObject)
-  The Game Manager class. This is a gateway for the user to define their own game events, and instantiates the initial objects. Ideally, the user only makes changes to GameManager.py and leaves game.py alone (though the user is free to do what they wish, of course)
+  The Game Manager class. This is a gateway for the user to define their own game events, and instantiates the initial objects. Ideally, the user only makes changes to game_manager.py and leaves game.py alone (though the user is free to do what they wish, of course)
 
 ## Variables
   None, all are defined by the user or are inherited from GameObject
