@@ -91,6 +91,9 @@ The name of the object
 
 ##### `update()`
   This function is run once per frame.
+
+##### `collision(other_obj)`
+  Called if another object(referenced by `other_obj`) collides with this object
   
   
   
