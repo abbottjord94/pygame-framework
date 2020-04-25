@@ -20,7 +20,7 @@ class Boss(GameObject):
 				self.speed = [2*self.inversion,0]
 				if self._bounds.left < 0:
 					self.inversion = 1
-					self.speed = [2,0]
+					self.speed = [2*self.inversion,0]
 					self._bounds.y += 50
 				if self._bounds.right > self._game._size[0]:
 					self.inversion = -1
