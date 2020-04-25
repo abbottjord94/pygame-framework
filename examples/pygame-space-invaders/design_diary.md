@@ -6,4 +6,6 @@ Over spring break I developed this PyGame framework in order to simplify making 
   * Enemies spawn in waves and get faster each wave, as does the player's fire rate,
   * A Boss-type enemy, which requires several shots to take down but is much slower
 
+Overall the game functions well, although the gameplay is not practical beyond a few waves. Additionally, bosses become much easier as your fire rate increases, since your bullets do the same amount of damage to it. Changes to the mechanics of the bullets and enemies could solve these issues, but as a technical demonstration, this game shows some of what can be done in PyGame.
+
 ![MenuGif](https://github.com/abbottjord94/pygame-framework/blob/master/examples/pygame-space-invaders/menu.gif)
