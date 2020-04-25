@@ -1,12 +1,12 @@
 import pygame
 from game_object import GameObject
 
-class Enemy(GameObject):
+class Boss(GameObject):
 
-	speed = [3,0]
-	waveCount = 0
+	speed = [2,0]
 	gameManager = None
 	soundManager = None
+	health = 100
 	inversion = 1
 
 	#Start Function, runs once upon initialization of the object
@@ -16,16 +16,15 @@ class Enemy(GameObject):
 	def update(self):
 		self.gameManager = self._game.getGameObjectByName("GameManager")
 		if not self.gameManager == None:
-			self.waveCount = self.gameManager.waveCount
 			if self.gameManager.playing:
-				self.speed = [(3 + self.waveCount)*self.inversion,0]
+				self.speed = [2*self.inversion,0]
 				if self._bounds.left < 0:
 					self.inversion = 1
-					self.speed = [(3 + self.waveCount)*self.inversion,0]
+					self.speed = [2,0]
 					self._bounds.y += 50
 				if self._bounds.right > self._game._size[0]:
 					self.inversion = -1
-					self.speed = [(3 + self.waveCount)*self.inversion,0]
+					self.speed = [2*self.inversion,0]
 					self._bounds.y += 50
 			else:
 				self.speed = [0,0]
@@ -34,11 +33,13 @@ class Enemy(GameObject):
 
 	def collision(self,other_obj):
 		if other_obj.getName() == "Bullet":
+			self.health -= 20
 			if not self.gameManager == None:
 				self.gameManager.score += 1
 			#self.soundmanager.play_sound("explosion.wav")
 			self._game.remove(other_obj)
-			self._game.remove(self)
+			if(self.health <= 0):
+				self._game.remove(self)
 
 		if other_obj.getName() == "Player":
 			if not self.gameManager == None:

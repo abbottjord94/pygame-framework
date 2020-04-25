@@ -40,9 +40,10 @@ class Game():
 		self._gameObjects.append(obj)
 		return self.getGameObjectByName(obj.getName())
 
-	#Removes a GameObject from the Game (not yet tested)
+	#Removes a GameObject from the Game
 	def remove(self,obj):
-		self._gameObjects.remove(obj)
+		if obj in self._gameObjects:
+			self._gameObjects.remove(obj)
 
 	#Handles incoming I/O events by placing them into a queue that GameObjects can access
 	#Events are are removed from the queue once per clock tick
