@@ -6,6 +6,11 @@
 
 # Usage
   The goal of this project was to generalize a game loop with event and collision handling using an object-oriented approach. This takes some of the work out of developing games with PyGame, allowing users to develop a wide array of objects for different purposes
+  
+  ## To install/run a game
+   ##### Make sure that Python and pygame are installed. On Windows, this can be done on Powershell by simply typing `python`. If it is not installed, it will take you to the Windows Store page to install it.
+   ##### Once python is installed, run `pip install pygame` in the Powershell window to install pygame.
+   ##### Once pygame is installed, navigate to the base directory of the game (this is where the `app.py` file is located) and run `python app.py`. The game should load and begin playing.
 
 ## Classes
 
