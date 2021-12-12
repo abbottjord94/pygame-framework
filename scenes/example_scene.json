@@ -1,0 +1,9 @@
+{
+	"scene_name": "Example Scene",
+	"background": "example.png",
+	"objects": [
+		{"obj_name": "obj1_name", "type": "example_type", "x": 0, "y": 0, "image": "example_obj.png", "custom_properties":{}},
+		{"obj_name": "obj2_name", "type": "example_type", "x": 10, "y": 10, "image": "example_obj.png", "custom_properties": {}},
+		{"obj_name": "obj3_name", "type": "example_type", "x": 20, "y": 20, "image": "example_obj.png", "custom_properties": {}}
+	]
+}

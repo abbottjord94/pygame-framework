@@ -1,0 +1,20 @@
+{
+	"project_name": "Example Project",
+	"project_directory": "C:/example_dir",
+	"scenes": [
+		"scene_1.json",
+		"scene_2.json",
+		"scene_3.json"
+	],
+	"object_types": [
+		"example_type_1",
+		"example_type_2",
+		"example_type_3"
+	],
+	"project_settings": {
+		"window_x": 1024,
+		"window_y": 768,
+		"tps": 30,
+		"game_title": "Example Game Title"
+	}
+}

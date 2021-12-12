@@ -1,0 +1,1 @@
+{"project_name": "pacman", "scenes": ["scene_1", "scene_2"], "object_types": {"Player": {"image": "C:/Users/Jordan/Desktop/pygame-framework/examples\\pacman\\assets\\enemy.png"}}, "project_settings": {"window_x": 800, "window_y": 600, "tps": 30, "game_title": "Pac Man"}, "project_directory": "C:/Users/Jordan/Desktop/pygame-framework/examples\\pacman"}

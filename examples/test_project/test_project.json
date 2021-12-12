@@ -1,0 +1,1 @@
+{"project_name": "test_project", "scenes": ["scene_1"], "object_types": {"Player": {"image": "C:/Users/Jordan/Desktop/pygame-framework/examples\\test_project\\assets\\enemy.png"}}, "project_settings": {"window_x": 800, "window_y": 600, "tps": 30, "game_title": "test project"}, "project_directory": "C:/Users/Jordan/Desktop/pygame-framework/examples\\test_project"}
